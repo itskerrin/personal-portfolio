@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta
+      name="Personal Portfolio"
+      content="Junior developer portfolio page."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/8828eef7fc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="nav-container">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact-me">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <div class="hero">
+      <div class="content" id="home">
+        <h1 class="title">Temp title</h1>
+        <span>Temp for animation</span>
+      </div>
+    </div>
+
+    <section class="about" id="about-me">
+        <div><h1 class="about-title">About Me</h1></div>
+        <div class="about-grid">
+      <div class="left">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus,
+          ducimus!
+        </p>
+      </div>
+      <div class="right">
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+          molestias aut similique, beatae dicta reprehenderit.
+        </p>
+      </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="projects-container">
+        <h1 class="projects-title">My Projects</h1>
+        <ul>
+          <li class="projects-panel">
+            <div class="pro-container one">
+              <img src="#" alt="Project1" />
+            </div>
+            <p class="project-title">Project one</p>
+            <p class="project-desc">Lorem ipsum dolor sit amet.</p>
+          </li>
+          <li class="projects-panel">
+            <div class="pro-container two">
+              <img src="#" alt="Project2" />
+            </div>
+            <p class="project-title">Project two</p>
+            <p class="project-desc">Lorem ipsum dolor sit amet.</p>
+          </li>
+          <li class="projects-panel">
+            <div class="pro-container three">
+              <img src="#" alt="Project3" />
+            </div>
+            <p class="project-title">Project three</p>
+            <p class="project-desc">Lorem ipsum dolor sit amet.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact" id="contact-me">
+        <h1 class="contact-title">Contact me</h1>
+        <div class="email-contact">
+            <div class="form-container">
+         <form
+           action="https://formspree.io/f/xqkgnobq"
+           method="POST"
+         >
+           <div class="column">
+           <label>
+             <input type="text" name="_replyto" value="Email address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Email address';}">
+             </label> </div>
+           <div class="column"><label> 
+             <input type="text" name="name" id="name" value="Your name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Your name';}" />
+             </label></div>
+           <div class="column">
+           <label>
+             <textarea type="text" name="message" value="Message" onfocus="if(this.value == 'Message') this.value='';" onblur="if(this.value == '') this.value='Message';"></textarea>
+             </label> </div>
+         <div class="button">
+           <button type="submit">Send message</button>
+           </form></div>
+         </div>
+         <div class="info-container"><ul>
+             <div><i class="fas fa-map-marker-alt"></i> London, UK</div>
+             <div><i class="far fa-envelope"></i> itskerrin@gmail.com</div>
+             <div><i class="fab fa-github"></i><a href="https://github.com/itskerrin"> GitHub</a></div>
+             <div><i class="fab fa-linkedin"></i> LinkedIn</div>
+         </ul></div>
+         </div>
+         </section>
+
+    <div class="footer">
+      <footer>
+          <div>
+              <a href="#home"><i class="fas fa-arrow-up" id="home-link"></i></a></div></footer>
+    </div>
+
+    <script src="script.js" async defer></script>
+  </body>
+</html>
