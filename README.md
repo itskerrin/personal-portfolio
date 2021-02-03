@@ -1,1 +1,1 @@
-# personal-portfolio
+My personal portfolio as a junior developer.
