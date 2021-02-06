@@ -19,10 +19,9 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-img {
-  width: 100%;
+  &:visited {
+    color: #112240;
+  }
 }
 
 .nav-container {
@@ -32,6 +31,7 @@ img {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 10;
 
   a {
     color: #a8b2d1;
@@ -60,15 +60,12 @@ header {
   height: 60vh;
   text-align: center; /* maybe make left for animation */
   padding: 4em;
+  display: grid;
+  text-align: center;
 }
 
 .content {
   padding: 35% 0%;
-  text-align: center;
-}
-
-.title {
-  display: grid;
   text-align: center;
 }
 
@@ -82,12 +79,6 @@ section {
   padding: 4em 2em;
   text-align: center;
 }
-
-/* .about-title {
-  text-transform: uppercase;
-  display: block;
-  margin-top: -0.4em;
-} */
 
 .projects {
   background: #112240;
@@ -104,29 +95,35 @@ section {
   margin-bottom: 1em;
 
   .pro-container {
-    height: 100px;
     display: grid;
     place-content: center;
-    margin: 0 auto;
+  }
+  img {
+    width: 100%;
+    border-radius: 1em;
+    overflow: hidden;
+    opacity: 0.5;
+    z-index: 2;
 
-    &.one {
-      width: 100px;
-    }
-    &.two {
-      width: 100px;
-    }
-    &.three {
-      width: 100px; /* subject to image */
+    &:hover {
+      opacity: 1;
     }
   }
 }
 
 .project-title {
   font-weight: bold;
+  margin-top: 2em;
+  a {
+    color: #112240;
+    &:hover {
+      color: #64ffda;
+    }
+  }
 }
 
 .project-desc {
-  margin-bottom: 2em;
+  margin-bottom: 0.5em;
 }
 
 .info-container {
@@ -254,7 +251,7 @@ textarea {
     text-align: center;
   }
 
-  .title {
+  .hero {
     display: grid;
     text-align: center;
   }
@@ -276,11 +273,6 @@ textarea {
   .projects-container {
     display: grid;
     text-align: center;
-  }
-
-  .left {
-    display: grid;
-    place-content: center;
   }
 
   .right {
@@ -357,10 +349,7 @@ textarea {
   }
 
   .left {
-    display: grid;
-    place-content: center;
-    margin-left: 10em;
-    margin-right: 5em;
+    margin-left: 9em;
     margin-top: 1em;
   }
 
