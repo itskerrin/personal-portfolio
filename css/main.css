@@ -24,6 +24,10 @@ a:visited {
   color: #112240;
 }
 
+a:hover {
+  color: #64ffda;
+}
+
 .nav-container {
   background: #0a192f;
   display: -webkit-box;
@@ -80,11 +84,42 @@ header ul a {
 
 .content h1 {
   line-height: 1;
+  font-size: 36px;
+}
+
+.content .sub-title {
+  font-size: 19px;
+}
+
+.cv-btn {
+  cursor: pointer;
+  background: #ffffff;
+  margin-top: 2em;
+  border: none;
+  padding: 7px 15px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 20px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.cv-btn:hover {
+  background: #112240;
+  color: #64ffda;
 }
 
 section {
   padding: 4em 2em;
   text-align: center;
+}
+
+.right li {
+  margin-top: 25px;
+  font-weight: bold;
+}
+
+.right .src-code {
+  margin-top: 2em;
 }
 
 .projects {
@@ -289,7 +324,15 @@ textarea {
     text-align: center;
   }
   .right {
-    margin-left: 2em;
+    margin-left: 6em;
+    text-align: center;
+  }
+  .right li {
+    margin-top: 25px;
+    font-weight: bold;
+  }
+  .right .src-code {
+    margin-top: 1em;
   }
   .projects {
     padding-top: 4em;
@@ -356,14 +399,19 @@ textarea {
     text-align: center;
   }
   .left {
-    margin-left: 9em;
+    margin-left: 1em;
     margin-top: 1em;
   }
   .right {
-    display: -ms-grid;
-    display: grid;
-    place-content: center;
-    margin-right: 10em;
+    margin-top: 1em;
+    text-align: center;
+  }
+  .right li {
+    margin-top: 25px;
+    font-weight: bold;
+  }
+  .right .src-code {
+    margin-top: 1em;
   }
   .email-contact {
     display: -ms-grid;

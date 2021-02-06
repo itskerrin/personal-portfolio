@@ -1,1 +1,1 @@
-My personal portfolio for a junior developer..
+My personal portfolio as a junior developer..
