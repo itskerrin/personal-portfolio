@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 * {
   scroll-behavior: smooth;
 }
@@ -34,8 +34,8 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: fixed;
   top: 0;
   width: 100%;
@@ -70,7 +70,6 @@ header ul a {
   color: #a8b2d1;
   height: 60vh;
   text-align: center;
-  /* maybe make left for animation */
   padding: 4em;
   display: -ms-grid;
   display: grid;
@@ -78,7 +77,8 @@ header ul a {
 }
 
 .content {
-  padding: 35% 0%;
+  top: 50%;
+  margin: auto;
   text-align: center;
 }
 
@@ -296,7 +296,7 @@ textarea {
 /* Tablets etc */
 @media only screen and (min-width: 800px) {
   .content {
-    padding: 19%;
+    /* padding: 19%; */
     text-align: center;
   }
   .hero {
@@ -312,7 +312,7 @@ textarea {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 50% auto;
-        grid-template-columns: 50% auto;
+    grid-template-columns: 50% auto;
     padding-left: 3em;
   }
   .about-title {
@@ -343,8 +343,8 @@ textarea {
   .projects-container ul {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[3];
-        grid-template-columns: repeat(3, auto);
+    -ms-grid-columns: (auto) [3];
+    grid-template-columns: repeat(3, auto);
     /* g-t-c: To make items align horizontally */
     grid-gap: 1em;
   }
@@ -358,7 +358,7 @@ textarea {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 2fr 1fr;
-        grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
   }
   .form-container {
     padding-left: 5em;
@@ -375,8 +375,8 @@ textarea {
     display: grid;
   }
   .content {
-    padding: 17%;
-    text-align: center;
+    position: relative;
+    top: 4em;
   }
   .title {
     display: -ms-grid;
@@ -392,7 +392,7 @@ textarea {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 50% auto;
-        grid-template-columns: 50% auto;
+    grid-template-columns: 50% auto;
     padding-left: 3em;
   }
   .about-title {
@@ -417,7 +417,7 @@ textarea {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 2.5fr 2fr;
-        grid-template-columns: 2.5fr 2fr;
+    grid-template-columns: 2.5fr 2fr;
   }
   .contact {
     padding-top: 4em;
@@ -429,4 +429,3 @@ textarea {
     padding-left: 10em;
   }
 }
-/*# sourceMappingURL=main.css.map */

@@ -61,14 +61,13 @@ header {
   background: #0a192f;
   color: #a8b2d1;
   height: 60vh;
-  text-align: center; /* maybe make left for animation */
+  text-align: center;
   padding: 4em;
   display: grid;
-  text-align: center;
 }
 
 .content {
-  padding: 35% 0%;
+  // padding: 35% 0%;
   text-align: center;
 }
 
@@ -283,7 +282,7 @@ textarea {
 /* Tablets etc */
 @media only screen and (min-width: 800px) {
   .content {
-    padding: 19%;
+    // padding: 19%;
     text-align: center;
   }
 
@@ -370,7 +369,7 @@ textarea {
   }
 
   .content {
-    padding: 17%;
+    // padding: 17%;
     text-align: center;
   }
 
