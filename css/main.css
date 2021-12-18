@@ -293,7 +293,7 @@ textarea {
   float: right;
 }
 
-/* Tablets etc */
+/* Tablets, larger screens */
 @media only screen and (min-width: 800px) {
   .content {
     /* padding: 19%; */
@@ -348,6 +348,7 @@ textarea {
     /* g-t-c: To make items align horizontally */
     grid-gap: 1em;
   }
+
   .contact {
     padding-top: 4em;
   }
